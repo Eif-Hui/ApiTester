@@ -1,0 +1,1859 @@
+2020-11-21 21:56:22,557 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>管理台登录
+2020-11-21 21:56:52,625 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:60] - ERROR: 接口请求异常,原因：HTTPSConnectionPool(host='campus-sit.sf-express.com', port=443): Max retries exceeded with url: /campusplus/test/pcLogin/admin (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fcc03c9b240>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-11-21 21:56:52,637 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>学校查询
+2020-11-21 21:57:22,641 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:60] - ERROR: 接口请求异常,原因：HTTPSConnectionPool(host='campus-sit.sf-express.com', port=443): Max retries exceeded with url: /campusplus/school/queryList (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fcc03c9be10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-11-21 22:27:04,162 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES管理台登录
+2020-11-21 22:27:04,394 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/test/pcLogin/admin
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>""
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>""
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-21 22:27:04,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sat, 21 Nov 2020 14:27:04 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=84bfc7305ffe708408; path=/, HWWAFSESTIME=1605968824633; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-21 22:27:04,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"未知异常，请联系管理员","code":500}
+2020-11-21 22:27:04,397 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:41] - ERROR: 保存失败，参数为空
+2020-11-21 22:27:04,397 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：500 不等于 预期值：0
+2020-11-21 22:27:04,401 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>NO学校新增
+2020-11-21 22:27:04,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15965168422",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sat, 21 Nov 2020 14:27:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-21 22:27:04,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-21 22:27:04,426 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-21 22:27:04,427 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES学校查询
+2020-11-21 22:27:04,451 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-21 22:27:04,451 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-21 22:27:04,451 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-21 22:27:04,452 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-21 22:27:04,452 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-21 22:27:04,452 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-21 22:27:04,452 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-21 22:27:04,453 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sat, 21 Nov 2020 14:27:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-21 22:27:04,453 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-21 22:27:04,453 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:41] - ERROR: 保存失败，参数为空
+2020-11-21 22:27:04,453 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-21 22:27:04,455 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>NO学校删除
+2020-11-21 22:27:04,478 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/delete/None
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>""
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sat, 21 Nov 2020 14:27:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-21 22:27:04,479 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-21 22:27:04,480 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:09:04,086 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>NO_管理台登录
+2020-11-22 09:09:04,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:09:04,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/test/pcLogin/admin
+2020-11-22 09:09:04,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>""
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>""
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:09:04 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=fb09473ce8215fc174; path=/, HWWAFSESTIME=1606007344193; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:09:04,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"未知异常，请联系管理员","code":500}
+2020-11-22 09:09:04,247 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:41] - ERROR: 保存失败，参数为空
+2020-11-22 09:09:04,247 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：500 不等于 预期值：0
+2020-11-22 09:09:04,252 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 09:09:04,291 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15348210802",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:09:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:09:04,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:09:04,293 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:09:04,294 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>NO_学校查询
+2020-11-22 09:09:04,324 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:09:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:09:04,325 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:09:04,326 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:41] - ERROR: 保存失败，参数为空
+2020-11-22 09:09:04,326 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:09:04,327 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>NO_学校删除
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/delete/None
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>""
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:09:04,351 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:09:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:09:04,352 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:09:04,352 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:15:08,024 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 09:15:08,141 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:15:08,141 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 09:15:08,141 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:15:08,141 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:15:08,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13784083504",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 09:15:08,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:15:08,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:15:08,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:15:08 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=b11477305947abfda8; path=/, HWWAFSESTIME=1606007708722; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:15:08,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:15:08,143 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:16:05,472 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15346678008",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:16:06 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=b48a0735fe5654219f; path=/, HWWAFSESTIME=1606007766257; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:16:05,643 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:16:05,644 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:16:59,897 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13946998168",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:16:59 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=9226173a840de712fd; path=/, HWWAFSESTIME=1606007819944; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:16:59,984 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:16:59,985 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 09:16:59,987 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 09:17:00,014 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 09:17:00,014 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 09:17:00,014 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 01:17:00 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 09:17:00,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 09:17:00,016 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:41] - ERROR: 保存失败，参数为空
+2020-11-22 09:17:00,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 15:51:32,130 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 15:51:32,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 15:51:32,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 15:51:32,244 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15556102359",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 07:51:32 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=9896473fa29bbee7ab; path=/, HWWAFSESTIME=1606031492588; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 15:51:32,245 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 15:51:32,246 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 15:51:32,252 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 15:51:32,278 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 15:51:32,279 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 15:51:32,279 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 15:51:32,279 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 15:51:32,280 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 15:51:32,280 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 15:51:32,280 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 15:51:32,280 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 07:51:32 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 15:51:32,280 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 15:51:32,281 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 15:51:32,281 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 15:52:13,303 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 15:52:13,404 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 15:52:13,404 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 15:52:13,404 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 15:52:13,404 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 15:52:13,405 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13188347615",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 15:52:13,405 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 15:52:13,405 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 15:52:13,405 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 07:52:13 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=3d65073f67f3ce93b0; path=/, HWWAFSESTIME=1606031533361; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 15:52:13,405 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 15:52:13,409 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 15:52:13,514 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 15:52:13,545 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 15:52:13,545 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 15:52:13,545 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 15:52:13,545 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 15:52:13,546 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 15:52:13,546 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 15:52:13,546 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 15:52:13,546 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 07:52:13 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 15:52:13,546 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 15:52:13,547 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 15:52:13,548 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:06:36,695 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:06:36,827 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:06:36,827 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13425699213",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:06:37 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=d876773c571f10fd56; path=/, HWWAFSESTIME=1606032397290; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:06:36,828 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:06:36,829 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:06:36,836 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:06:36,868 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:06:37 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:06:36,869 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:06:36,869 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:43] - ERROR: 保存失败，参数为空
+2020-11-22 16:06:36,869 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:13:43,915 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:13:44,010 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13684323984",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:13:43 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f3b5e73ee148580f0b; path=/, HWWAFSESTIME=1606032823976; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:13:44,011 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:13:44,012 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:13:44,017 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:13:44,045 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:13:44,046 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:13:44,046 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:13:44,046 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:13:44,046 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:13:44,047 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:13:44,047 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:13:44,047 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:13:44 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:13:44,047 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:13:44,048 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:13:44,048 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:14:22,058 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15551738895",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:14:22,136 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:14:22,137 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:14:22 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f6dff7344f6b2d0d7d; path=/, HWWAFSESTIME=1606032862110; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:14:22,137 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:14:22,138 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:14:22,144 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:14:22,164 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:14:22 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:14:22,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:14:22,166 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:14:22,166 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:14:41,622 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:14:41,765 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15882099008",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:14:41,766 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:14:41,767 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:14:41 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=99686737e675aafb05; path=/, HWWAFSESTIME=1606032881725; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:14:41,767 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:14:41,768 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:14:41,772 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:14:41,795 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:14:41,796 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:14:41 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:14:41,796 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:14:41,796 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:14:41,797 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:16:43,156 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15965929003",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:16:43,254 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:16:43 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=b41f2732cd6d57cbcd; path=/, HWWAFSESTIME=1606033003217; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:16:43,255 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:16:43,256 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:16:43,262 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:16:43,289 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:16:43,290 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:16:43,291 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:16:43 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:16:43,291 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:16:43,292 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:16:43,292 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:17:41,808 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:17:41,909 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:17:41,909 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:17:41,909 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:17:41,909 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:17:41,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13857912948",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:17:41,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:17:41,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:17:41,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:17:42 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=9cecc73717a1da73b4; path=/, HWWAFSESTIME=1606033062366; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:17:41,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:17:41,912 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:17:41,916 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:17:41,940 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:17:41,940 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:17:41,940 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:17:42 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:17:41,941 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:17:41,942 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:17:41,942 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:21:03,987 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:21:04,083 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:21:04,083 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15147281382",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:21:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=4cec37329374789b80; path=/, HWWAFSESTIME=1606033264548; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:21:04,084 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:21:04,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:21:04,091 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:21:04,118 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:21:04,118 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:21:04 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:21:04,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:21:04,120 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:21:04,121 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:21:36,927 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:21:37,023 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13363786120",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:21:37 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=2b76673fb16304e54c; path=/, HWWAFSESTIME=1606033297483; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:21:37,024 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:21:37,025 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:21:37,028 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:21:37,064 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:21:37,064 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:21:37,064 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:21:37,064 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:21:37,064 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:21:37,065 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:21:37,065 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:21:37,065 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:21:37 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:21:37,065 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:21:37,066 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:21:37,066 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:22:14,883 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:22:15,000 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:22:15,001 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:22:15,001 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13806332776",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:22:15 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=e76457328996042f64; path=/, HWWAFSESTIME=1606033335462; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:22:15,002 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:22:15,003 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:22:15,008 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:22:15,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:22:15,034 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:22:15 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:22:15,034 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:22:15,034 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:22:15,035 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:23:01,585 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:23:01,675 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:23:01,675 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15213115746",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:23:01 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=5d16f73b52204cdef6; path=/, HWWAFSESTIME=1606033381633; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:23:01,676 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:23:01,678 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:23:01,681 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:23:01,707 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:23:01,707 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:23:01,708 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:23:01,708 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:23:01,708 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:23:01,708 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:23:01,708 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:23:01,709 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:23:01 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:23:01,709 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:23:01,710 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:23:01,710 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:27:18,797 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:27:18,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:27:18,910 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13800624951",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:27:18 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=1a2f7730678fd5a98f; path=/, HWWAFSESTIME=1606033638861; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:27:18,911 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:27:18,912 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:27:18,916 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:124] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:27:18,936 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:27:18,936 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:27:18 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:27:18,937 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:27:18,938 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:27:18,938 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:32:13,246 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:32:13,360 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13199503253",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:32:13,361 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:32:13,362 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:32:13 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=ab716733f2cdc68726; path=/, HWWAFSESTIME=1606033933758; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:32:13,362 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:32:13,363 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:32:13,369 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:32:13,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:32:13,395 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:32:13 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:32:13,396 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:32:13,397 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:32:13,397 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:34:19,855 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:34:19,979 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:34:19,979 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:34:19,979 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13074521117",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:34:20 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=9ced8730358bb9a184; path=/, HWWAFSESTIME=1606034060313; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:34:19,980 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:34:19,981 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:34:19,987 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:34:20,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:34:20,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:34:20,015 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:34:20 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:34:20,016 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:34:20,017 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:34:20,017 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:38:02,440 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:38:02,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13130174349",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:38:02,557 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:38:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=088cb734233cccb5ff; path=/, HWWAFSESTIME=1606034282521; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:38:02,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:38:02,559 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:38:02,563 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:38:02,590 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:38:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:38:02,591 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:38:02,592 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:38:02,592 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:38:08,895 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:38:08,998 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:38:08,998 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:38:08,998 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:38:08,998 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:38:08,998 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15702729888",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:38:08,999 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:38:08,999 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:38:08,999 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:38:08 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=1f55f730a6e4c4ca53; path=/, HWWAFSESTIME=1606034288967; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:38:08,999 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:38:09,000 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:38:09,004 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:38:09,031 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:38:09,031 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:38:09,031 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:38:09 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:38:09,032 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:38:09,033 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:38:09,033 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:39:27,454 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15687632102",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:39:27,558 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:39:27,559 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:39:27 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=a162c734aa2b996b15; path=/, HWWAFSESTIME=1606034367529; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:39:27,559 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:39:27,560 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:39:27,566 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:39:27,593 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:39:27,593 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:39:27 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:39:27,594 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:39:27,595 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:39:27,595 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:40:34,164 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:40:34,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:40:34,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:40:34,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13730497126",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:40:34 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=c6f3f73a0038839352; path=/, HWWAFSESTIME=1606034434235; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:40:34,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:40:34,280 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:40:34,371 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:40:34,371 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:40:34,371 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:40:34,371 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:40:34,371 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:40:34,372 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:40:34,372 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:40:34,372 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:40:34 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:40:34,372 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:40:34,372 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:40:34,373 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:43:38,681 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:43:38,778 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:43:38,779 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:43:38,779 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:43:38,779 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:43:38,780 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13495734195",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:43:38,780 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:43:38,780 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:43:38,780 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:43:38 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=6b74273e225ba5fb74; path=/, HWWAFSESTIME=1606034618891; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:43:38,780 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:43:38,781 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:43:38,787 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:43:38,813 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:43:38,813 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:43:38,813 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:43:38,813 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:43:38,813 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:43:38,814 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:43:38,814 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:43:38,814 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:43:38 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:43:38,814 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:43:38,815 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:43:38,815 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:12,307 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15956294326",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:12,383 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:12,384 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:12 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=a2f9e73cfb5d074ed7; path=/, HWWAFSESTIME=1606034652507; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:12,384 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:12,385 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:12,388 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:12,412 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:12 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:12,413 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:12,413 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:44:12,413 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:28,176 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:44:28,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:28,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:44:28,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:28,274 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:28,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13287175435",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:44:28,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:28,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:28,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:28 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=80af87300ac0961010; path=/, HWWAFSESTIME=1606034668377; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:28,275 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:28,277 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:28,280 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:28 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:28,306 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:28,307 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:44:28,307 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:56,174 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:44:56,269 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:56,269 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:44:56,269 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:56,269 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:56,269 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15513648152",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:44:56,270 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:56,270 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:56,270 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:56 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=5e97973e8a744c9d73; path=/, HWWAFSESTIME=1606034696376; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:56,270 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:56,271 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:44:56,276 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:44:56,302 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:44:56,302 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:44:56,302 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:44:56,302 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:44:56,302 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:44:56,303 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:44:56,303 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:44:56,303 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:44:56 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:44:56,303 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:44:56,303 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:44:56,304 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:45:34,046 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:45:34,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:45:34,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 16:45:34,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:45:34,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:45:34,142 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15859043944",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 16:45:34,143 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:45:34,143 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:45:34,143 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:45:34 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=e136573c9249e410b2; path=/, HWWAFSESTIME=1606034734254; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:45:34,143 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:45:34,144 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:45:34,150 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 16:45:34,193 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 16:45:34,193 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 16:45:34,193 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 16:45:34,193 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 16:45:34,193 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 16:45:34,194 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 16:45:34,194 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 16:45:34,194 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 08:45:34 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 16:45:34,194 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 16:45:34,194 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 16:45:34,195 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 16:46:53,109 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:129] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:52:12,821 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 16:52:35,309 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:127] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:19:58,977 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:19:59,085 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:19:59,085 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:19:59,085 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13947251192",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:19:59 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=e3396735b187495ac1; path=/, HWWAFSESTIME=1606036799038; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:19:59,086 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:19:59,087 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:19:59,092 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:19:59,119 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:19:59,120 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:19:59,120 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:19:59 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:19:59,120 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:19:59,120 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:19:59,120 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:20:38,519 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:20:38,645 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13647283565",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:20:38 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=1d88773f17ad64a58d; path=/, HWWAFSESTIME=1606036838850; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:20:38,646 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:20:38,647 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:20:38,654 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:125] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:20:38,684 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:20:38,684 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:20:38,685 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:20:38,685 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:20:38,685 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:20:38,685 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:20:38,685 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:20:38,686 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:20:38 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:20:38,686 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:20:38,686 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:20:38,686 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:34:54,744 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13696386930",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:34:54,844 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:34:54,845 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:34:54,845 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:34:55 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=664ce73cdc0afb538a; path=/, HWWAFSESTIME=1606037695036; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:34:54,845 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:34:54,846 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:34:54,852 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:34:54,886 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:34:54,887 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:34:54,887 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:34:54,887 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:34:54,888 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:34:54,888 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:34:54,888 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:34:54,888 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:34:55 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:34:54,888 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:34:54,889 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:34:54,889 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:35:12,228 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:35:12,333 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:35:12,333 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:35:12,333 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:35:12,333 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:35:12,334 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "15772638806",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:35:12,334 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:35:12,334 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:35:12,334 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:35:12 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=3d92173b33cbfff42b; path=/, HWWAFSESTIME=1606037712531; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:35:12,334 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:35:12,339 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:35:12,433 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:35:12,459 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:35:12,459 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:35:12,460 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:35:12 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:35:12,461 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:35:12,461 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:35:12,461 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:39:17,398 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:39:17,535 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:39:17,535 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13293868786",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:39:17 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=c9ec573aa31a33c3d5; path=/, HWWAFSESTIME=1606037957735; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:39:17,536 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:39:17,540 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:39:17,626 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:39:17,655 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:39:17,655 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:39:17 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:39:17,656 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:39:17,657 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:39:17,657 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:47:32,603 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:47:32,603 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 17:47:32,728 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:47:32,728 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:47:32,728 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:47:32,728 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13036606814",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13036606814",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:47:32,729 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:47:32,730 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:47:32 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=5bdf1738cef3f4f8e5; path=/, HWWAFSESTIME=1606038452915; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:47:32,730 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:47:32 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=5bdf1738cef3f4f8e5; path=/, HWWAFSESTIME=1606038452915; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:47:32,730 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:47:32,730 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:47:32,735 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:47:32,735 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:47:32,826 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:47:32,826 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 17:47:32,863 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:47:32,863 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:47:32,864 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 17:47:32,865 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:47:32,865 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 17:47:32,865 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:47:32,865 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:47:33 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 09:47:33 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:47:32,866 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 17:47:32,867 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 17:47:32,867 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:54:02,305 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 18:54:02,305 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:54:02,423 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13172972094",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "13172972094",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:54:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f2f4c73cf240d10180; path=/, HWWAFSESTIME=1606042442359; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:54:02,424 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:54:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f2f4c73cf240d10180; path=/, HWWAFSESTIME=1606042442359; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:54:02,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:54:02,425 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:54:02,429 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:54:02,429 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:54:02,519 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 18:54:02,519 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 18:54:02,552 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:54:02,552 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:54:02,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:54:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:54:02 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 18:54:02,554 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 18:54:02,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:54:02,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:55:16,049 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 18:55:16,049 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校新增
+2020-11-22 18:55:16,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:55:16,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:55:16,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 18:55:16,165 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+2020-11-22 18:55:16,166 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:55:16,166 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:55:16,166 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:55:16,166 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:55:16,167 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "18657506030",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 18:55:16,167 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "18657506030",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+2020-11-22 18:55:16,167 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:55:16,167 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:55:16 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f6b0e73456210262e2; path=/, HWWAFSESTIME=1606042516105; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:55:16 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=f6b0e73456210262e2; path=/, HWWAFSESTIME=1606042516105; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:55:16,168 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:55:16,178 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:55:16,178 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:55:16,517 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 18:55:16,517 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:126] - INFO: 用例描述====>YES_学校查询
+2020-11-22 18:55:16,552 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:55:16,552 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:165] - INFO: 请求方式====>POST
+2020-11-22 18:55:16,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 18:55:16,553 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:166] - INFO: 请求地址====>https://campus-sit.sf-express.com/campusplus/school/queryList
+2020-11-22 18:55:16,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:55:16,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:167] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+2020-11-22 18:55:16,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:55:16,554 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:168] - INFO: 请求参数====>""
+2020-11-22 18:55:16,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 18:55:16,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:169] - INFO: 请求体====>{
+    "name": "name11",
+    "contact": "EifTest",
+    "page": 1,
+    "limit": 10
+}
+2020-11-22 18:55:16,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:55:16,555 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:172] - INFO: Cookies====>""
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:173] - INFO: 接口响应状态码====>200
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:55:16 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:174] - INFO: 接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 22 Nov 2020 10:55:16 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:55:16,556 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:175] - INFO: 接口响应体为====>{"msg":"illegal token","code":401}
+2020-11-22 18:55:16,558 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 18:55:16,558 - /Users/xiewenhui/Documents/github/ApiTester/test_case/test_cases/test_case.py[line:42] - ERROR: 保存失败，参数为空
+2020-11-22 18:55:16,559 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
+2020-11-22 18:55:16,559 - /Users/xiewenhui/Documents/github/ApiTester/core/test_base.py[line:133] - ERROR: 断言失败,实际值：401 不等于 预期值：0
