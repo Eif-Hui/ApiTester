@@ -1,7 +1,9 @@
 ## 项目说明
-- 本框架是为了快速实现**http/https**协议而设计的一套数据驱动自动化接口框架,基于**EXCEL+requests+unittest+ddt**设计,**pytest**作为执行器,本框架无需你使用代码编写用例,那你可能
-会担心万一有接口之间相互依赖,或者说需要登入的token等之类的接口,该如何编写用例,在这里告诉你们笨框架已经完美解决此问题,所有的一切将在EXCEL中进行！！本框架实现了在EXCEL中
-进行**接口用例编写,接口关联,接口断言**,还有很重要的一点,实现了类似**jmeter函数助手**的功能,譬如生成UUID,随机定长字符串,格式化日期,正则表达式等,只需要你在EXCCEL中使用特殊的写法就能够使用这些函数啦~~是不是很期待！！
+- 本框架是为了快速实现**http/https**协议而设计的一套数据驱动自动化接口框架,基于**EXCEL+requests+unittest+ddt**设计,**pytest**作为执行器；
+本框架无需你使用代码编写用例,那你可能会担心万一有接口之间相互依赖,或者说需要登入的token等之类的接口；
+该如何编写用例,已经解决此问题,所有的一切将在EXCEL中进行！！本框架实现了在EXCEL中
+进行**接口用例编写,接口关联,接口断言**,还有很重要的一点,实现了类似**jmeter函数助手**的功能；
+譬如生成UUID,随机定长字符串,格式化日期,正则表达式等,只需要你在EXCCEL中使用特殊的写法就能够使用这些函数
 
 
 ## 技术栈
@@ -16,7 +18,8 @@
 
 ## 环境部署
 - 解压压缩包，使用pycharm打开项目文件
-- 进入**File - Settings - Project - Project Interpreter**,选择项目中的 **ApiTestFrameWork/venv** 作为虚拟环境,若无法使用,可以尝试新增虚拟环境后,在控制台cd到**venv/Scripts**下,使用命令**pip install -r requirements.txt**文件所在的绝对路径（在项目根目录）,一条命令安装好所有依赖环境,你要做的就是慢慢等它装好
+- 进入**File - Settings - Project - Project Interpreter**,选择项目中的 **ApiTester/venv** 
+作为虚拟环境,若无法使用,可以尝试新增虚拟环境后,在控制台cd到**venv/Scripts**下,使用命令**pip install -r requirements.txt**
 - 验证环境是否安装完毕
 - **File - Settings - Tools - Python Integrated Tools - Default Test Runner**选择**py.test**
 - 执行**runCase.py**,观察结果是否成功,excel中有DEMO用例,可以看看执行结果访问
@@ -26,7 +29,6 @@
 - confs ===========> 配置文件
 - core ===========> 公共方法,工具类等
 - db_operate ==========> 数据库相关方法封装
-- files ==========> 测试文件
 - logs ==========> 日志文件
 - report ==========> 测试报告
 - test_case ===========> 测试用例
@@ -78,8 +80,3 @@
 - 参数为字符串的记得加**引号！！！** 中英文引号别搞混啦，统一用英文引号，就像写代码一样
 
 ## 待优化
-- 用例控制器 Y/N
-- 用例集相互隔离,若其中一条用例执行失败,则不会执行后续用例,一个流程视为一个用例集
-- excel表中多个Sheet批量读取
-- jenkins集成
-- 更多后续。。如flask可视化展示页面开发
