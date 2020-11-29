@@ -8,7 +8,7 @@
 '''
 import time
 import pytest
-from confs.conf import *
+from config.config import *
 import unittest
 from core.HTMLTestReportCN import HTMLTestRunner
 from BeautifulReport import BeautifulReport
@@ -55,7 +55,7 @@ class Actuator(object):
 
 
 if __name__ == '__main__':
-    Actuator().un_run_Report()
+    Actuator().py_run_allure()
 
 
 
