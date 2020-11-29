@@ -3,7 +3,7 @@
 # @Author  : Hui
 # @File    : mysql_operate.py
 
-from confs.conf import *
+from config.config import *
 import pymysql
 
 class MySQLOperate():

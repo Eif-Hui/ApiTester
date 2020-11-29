@@ -3,7 +3,7 @@
 # @Author  : Hui
 # @File    : redis_operate.py
 
-from confs.conf import REDIS_HOST,REDIS_PASSWORD,REDIS_PORT
+from config.config import REDIS_HOST,REDIS_PASSWORD,REDIS_PORT
 
 
 class RedisOperate():
