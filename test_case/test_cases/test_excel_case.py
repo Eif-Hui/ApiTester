@@ -1,5 +1,5 @@
 """
-#@file   : test_case.py
+#@file   : test_excel_case.py
 #@ide    : PyCharm
 #@time   : 2020-05-28 12:37:01
 """
@@ -16,9 +16,7 @@ from db_operate.redis_operate import RedisOperate
 
 @ddt
 class Test(unittest.TestCase):
-    api_data = get_all_case_name()
-
-
+    api_data = excel_to_list(data_file=BASE_PATH + "/confs/case.xlsx",sheet="Sheet1")
     # 全局变量池
     saves = {}
     # 识别${key}的正则表达式

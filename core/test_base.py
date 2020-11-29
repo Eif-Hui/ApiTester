@@ -119,6 +119,30 @@ class BaseTest(requests.Session):
             logger.error("接口请求异常,原因：{}".format(e))
             raise e
 
+
+    def send_request(self,method):
+        """
+        统一封装判断请求方法
+        :param method: 请求方法
+        :return:
+        """
+        res = None
+        # 判断接口请求类型
+        if method.upper() == 'GET':
+            res = self.get_request(url=url, params=params, headers=headers, cookies=cookies)
+        elif method.upper() == 'POST':
+            res = self.post_request(url=url, headers=headers, cookies=cookies, params=params, json=body)
+        elif method.upper() == 'UPLOAD':
+            res = self.upload_request(url=url, headers=headers, cookies=cookies, params=params, data=body,
+                                              files=file)
+        elif method.upper() == 'PUT':
+            res = self.put_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        elif method.upper() == 'DELETE':
+            res = self.delete_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        else:
+            pass  # 待扩展
+        return res
+
     def assertEquals(self, actual, expected):
         """
         断言是否等于
