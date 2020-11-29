@@ -5,7 +5,7 @@
 
 import requests
 from json import dumps
-from core.logger import Logger
+from methods_class.logger import Logger
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 logger = Logger().logger

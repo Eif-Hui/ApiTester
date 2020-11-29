@@ -35,6 +35,5 @@ class MySQLOperate():
             return result
         # return cursor.fetchone()
 
-
 if __name__ == '__main__':
     print(MySQLOperate("test").execute_sql("select *from student" ))

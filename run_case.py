@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2020/10/24 9:04 AM
 # @Author  : Hui
-# @File    : manage.py
+# @File    : run_case.py
 
 '''
     执行器
@@ -10,7 +10,7 @@ import time
 import pytest
 from config.config import *
 import unittest
-from core.HTMLTestReportCN import HTMLTestRunner
+from methods_class.HTMLTestReportCN import HTMLTestRunner
 from BeautifulReport import BeautifulReport
 
 

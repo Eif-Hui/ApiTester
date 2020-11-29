@@ -6,10 +6,10 @@
 
 import unittest
 from ddt import *
-from core.read_excel import *
-from core.test_base import *
+from methods_class.read_excel import *
+from methods_class.test_base import *
 import jsonpath
-from core.functons import *
+from methods_class.functons import *
 from db_operate.mysql_operate import MySQLOperate
 from db_operate.redis_operate import RedisOperate
 

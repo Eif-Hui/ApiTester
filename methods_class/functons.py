@@ -10,7 +10,7 @@ import random
 import datetime
 import re
 
-from core.aiding_method import *
+from methods_class.aiding_method import *
 
 def fakerdate(name):
     return method_faker(arg=name)
