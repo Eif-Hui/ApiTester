@@ -1,0 +1,314 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1606614578438" stop="1606614578712">
+  <description>
+#@file   : test_excel_case.py
+#@ide    : PyCharm
+#@time   : 2020-05-28 12:37:01
+</description>
+  <name>test_case.test_cases.test_excel_case</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1606614578438" status="failed" stop="1606614578662">
+      <description>测试用例：学校新增</description>
+      <name>Test.test__1</name>
+      <failure>
+        <message>AssertionError: </message>
+        <stack-trace>self = &lt;core.test_base.BaseTest object at 0x7ff18147b9b0&gt;, actual = '401'
+expected = '0'
+
+    def assertEquals(self, actual, expected):
+        """
+            断言是否等于
+            :param actual: 实际值
+            :param expected: 预期值
+            :return:
+            """
+        try:
+&gt;           assert actual == expected
+E           AssertionError: assert '401' == '0'
+E             - 401
+E             + 0
+
+core/test_base.py:154: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;test_case.test_cases.test_excel_case.Test testMethod=test__1&gt;
+is_run = 'yes', descrption = '学校新增'
+url = 'https://campus-sit.sf-express.com/campusplus/school/add', method = 'POST'
+headers = {'Content-Type': 'application/json', 'token': 'None'}, cookies = ''
+params = ''
+body = {'address': '广东省深圳市', 'areaCode': 'TEST_USE_A', 'areaName': '测试专用地区A', 'backDeposit': '0', ...}
+file = '', verify = '$.code=0;$.msg=success', saves = '', dbtype = '', db = ''
+setup_sql = '', teardown_sql = ''
+
+    @data(*api_data)
+    @unpack
+    def test_(self,is_run, descrption, url, method, headers, cookies, params, body, file, verify, saves, dbtype, db, setup_sql,
+              teardown_sql):
+        '''测试用例：{descrption}'''
+        logger.info("用例描述====&gt;" + is_run.upper()+"_"+descrption)
+        db_connect = None
+        redis_db_connect = None
+        setup_sql = self.build_param(setup_sql)
+        teardown_sql = self.build_param(teardown_sql)
+    
+        # 判断数据库类型,暂时只有mysql,redis
+        if dbtype.lower() == "mysql":
+            db_connect = MySQLOperate(db)
+        elif dbtype.lower() == "redis":
+            redis_db_connect = RedisOperate(db)
+        else:
+            pass
+    
+        if db_connect:
+            # 执行teardown_sql
+            self.execute_setup_sql(db_connect, setup_sql)
+    
+        if redis_db_connect:
+            # 执行teardown_redis操作
+            self.execute_redis_get(redis_db_connect, teardown_sql)
+    
+        url = self.build_param(url)
+        headers = self.build_param(headers)
+        params = self.build_param(params)
+        body = self.build_param(body)
+        params = eval(params) if params else params
+        headers = eval(headers) if headers else headers
+        cookies = eval(cookies) if cookies else cookies
+        body = eval(body) if body else body
+        file = eval(file) if file else file
+    
+        res = None
+        # 判断接口请求类型
+        if method.upper() == 'GET':
+            res = self.request.get_request(url=url, params=params, headers=headers, cookies=cookies)
+        elif method.upper() == 'POST':
+            res = self.request.post_request(url=url, headers=headers, cookies=cookies, params=params, json=body)
+        elif method.upper() == 'UPLOAD':
+            res = self.request.upload_request(url=url, headers=headers, cookies=cookies, params=params, data=body,
+                                              files=file)
+        elif method.upper() == 'PUT':
+            res = self.request.put_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        elif method.upper() == 'DELETE':
+            res = self.request.delete_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        else:
+            pass  # 待扩展
+    
+        if db_connect:
+            # 执行teardown_sql
+            self.execute_teardown_sql(db_connect, teardown_sql)
+    
+        if saves:
+            # 遍历saves
+            for save in saves.split(";"):
+                # 切割字符串 如 key=$.data
+                key = save.split("=")[0]
+                jsp = save.split("=")[1]
+                self.save_data(res.json(), key, jsp)
+    
+        if verify:
+            # 遍历verify:
+            if verify.endswith(";"):
+                verify = verify.split(";")[0]
+            for ver in verify.split(";"):
+                expr = ver.split("=")[0]
+                # 判断Jsonpath还是正则断言
+                if expr.startswith("$."):
+                    actual = jsonpath.jsonpath(res.json(), expr)
+                    if not actual:
+                        logger.error("该jsonpath未匹配到值,请确认接口响应和jsonpath正确性")
+                    actual = actual[0]
+                else:
+                    actual = re.findall(expr, res.text)[0]
+                expect = ver.split("=")[1]
+&gt;               self.request.assertEquals(str(actual), expect)
+
+test_case/test_cases/test_excel_case.py:199: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;core.test_base.BaseTest object at 0x7ff18147b9b0&gt;, actual = '401'
+expected = '0'
+
+    def assertEquals(self, actual, expected):
+        """
+            断言是否等于
+            :param actual: 实际值
+            :param expected: 预期值
+            :return:
+            """
+        try:
+            assert actual == expected
+            logger.info("断言成功,实际值：{} 等于 预期值：{}".format(actual, expected))
+        except AssertionError as e:
+            logger.error("断言失败,实际值：{} 不等于 预期值：{}".format(actual, expected))
+&gt;           raise AssertionError
+E           AssertionError
+
+core/test_base.py:158: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="ab703c1d-088f-453d-b4ea-6573f23e7720-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="39824-MainThread"/>
+        <label name="host" value="promote.cache-dns.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1606614578663" status="failed" stop="1606614578712">
+      <description>测试用例：学校查询</description>
+      <name>Test.test__2</name>
+      <failure>
+        <message>AssertionError: </message>
+        <stack-trace>self = &lt;core.test_base.BaseTest object at 0x7ff18147b9b0&gt;, actual = '401'
+expected = '0'
+
+    def assertEquals(self, actual, expected):
+        """
+            断言是否等于
+            :param actual: 实际值
+            :param expected: 预期值
+            :return:
+            """
+        try:
+&gt;           assert actual == expected
+E           AssertionError: assert '401' == '0'
+E             - 401
+E             + 0
+
+core/test_base.py:154: AssertionError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;test_case.test_cases.test_excel_case.Test testMethod=test__2&gt;
+is_run = 'yes', descrption = '学校查询'
+url = 'https://campus-sit.sf-express.com/campusplus/school/queryList'
+method = 'POST', headers = {'Content-Type': 'application/json', 'token': 'None'}
+cookies = '', params = ''
+body = {'contact': 'EifTest', 'limit': 10, 'name': 'name11', 'page': 1}
+file = '', verify = '$.code=0;$.msg=success'
+saves = 'schoolid=$.data.list[0].id', dbtype = '', db = '', setup_sql = ''
+teardown_sql = ''
+
+    @data(*api_data)
+    @unpack
+    def test_(self,is_run, descrption, url, method, headers, cookies, params, body, file, verify, saves, dbtype, db, setup_sql,
+              teardown_sql):
+        '''测试用例：{descrption}'''
+        logger.info("用例描述====&gt;" + is_run.upper()+"_"+descrption)
+        db_connect = None
+        redis_db_connect = None
+        setup_sql = self.build_param(setup_sql)
+        teardown_sql = self.build_param(teardown_sql)
+    
+        # 判断数据库类型,暂时只有mysql,redis
+        if dbtype.lower() == "mysql":
+            db_connect = MySQLOperate(db)
+        elif dbtype.lower() == "redis":
+            redis_db_connect = RedisOperate(db)
+        else:
+            pass
+    
+        if db_connect:
+            # 执行teardown_sql
+            self.execute_setup_sql(db_connect, setup_sql)
+    
+        if redis_db_connect:
+            # 执行teardown_redis操作
+            self.execute_redis_get(redis_db_connect, teardown_sql)
+    
+        url = self.build_param(url)
+        headers = self.build_param(headers)
+        params = self.build_param(params)
+        body = self.build_param(body)
+        params = eval(params) if params else params
+        headers = eval(headers) if headers else headers
+        cookies = eval(cookies) if cookies else cookies
+        body = eval(body) if body else body
+        file = eval(file) if file else file
+    
+        res = None
+        # 判断接口请求类型
+        if method.upper() == 'GET':
+            res = self.request.get_request(url=url, params=params, headers=headers, cookies=cookies)
+        elif method.upper() == 'POST':
+            res = self.request.post_request(url=url, headers=headers, cookies=cookies, params=params, json=body)
+        elif method.upper() == 'UPLOAD':
+            res = self.request.upload_request(url=url, headers=headers, cookies=cookies, params=params, data=body,
+                                              files=file)
+        elif method.upper() == 'PUT':
+            res = self.request.put_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        elif method.upper() == 'DELETE':
+            res = self.request.delete_request(url=url, headers=headers, cookies=cookies, params=params, data=body)
+        else:
+            pass  # 待扩展
+    
+        if db_connect:
+            # 执行teardown_sql
+            self.execute_teardown_sql(db_connect, teardown_sql)
+    
+        if saves:
+            # 遍历saves
+            for save in saves.split(";"):
+                # 切割字符串 如 key=$.data
+                key = save.split("=")[0]
+                jsp = save.split("=")[1]
+                self.save_data(res.json(), key, jsp)
+    
+        if verify:
+            # 遍历verify:
+            if verify.endswith(";"):
+                verify = verify.split(";")[0]
+            for ver in verify.split(";"):
+                expr = ver.split("=")[0]
+                # 判断Jsonpath还是正则断言
+                if expr.startswith("$."):
+                    actual = jsonpath.jsonpath(res.json(), expr)
+                    if not actual:
+                        logger.error("该jsonpath未匹配到值,请确认接口响应和jsonpath正确性")
+                    actual = actual[0]
+                else:
+                    actual = re.findall(expr, res.text)[0]
+                expect = ver.split("=")[1]
+&gt;               self.request.assertEquals(str(actual), expect)
+
+test_case/test_cases/test_excel_case.py:199: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;core.test_base.BaseTest object at 0x7ff18147b9b0&gt;, actual = '401'
+expected = '0'
+
+    def assertEquals(self, actual, expected):
+        """
+            断言是否等于
+            :param actual: 实际值
+            :param expected: 预期值
+            :return:
+            """
+        try:
+            assert actual == expected
+            logger.info("断言成功,实际值：{} 等于 预期值：{}".format(actual, expected))
+        except AssertionError as e:
+            logger.error("断言失败,实际值：{} 不等于 预期值：{}".format(actual, expected))
+&gt;           raise AssertionError
+E           AssertionError
+
+core/test_base.py:158: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="c4b8a8d6-92df-46d6-b555-f7cf5fbddad3-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="39824-MainThread"/>
+        <label name="host" value="promote.cache-dns.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

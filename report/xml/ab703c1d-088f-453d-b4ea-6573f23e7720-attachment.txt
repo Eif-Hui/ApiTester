@@ -1,0 +1,26 @@
+test_excel_case.py         124 INFO     用例描述====>YES_学校新增
+test_base.py               189 INFO     请求方式====>POST
+test_base.py               190 INFO     请求地址====>https://campus-sit.sf-express.com/campusplus/school/add
+test_base.py               191 INFO     请求头====>{
+    "Content-Type": "application/json",
+    "token": "None"
+}
+test_base.py               192 INFO     请求参数====>""
+test_base.py               193 INFO     请求体====>{
+    "wxCustomerId": "test",
+    "areaCode": "TEST_USE_A",
+    "areaName": "测试专用地区A",
+    "backDeposit": "0",
+    "useRunner": "0",
+    "phone": "18766839325",
+    "contact": "EifTest",
+    "address": "广东省深圳市",
+    "code": "name11",
+    "name": "name11",
+    "state": "0"
+}
+test_base.py               196 INFO     Cookies====>""
+test_base.py               197 INFO     接口响应状态码====>200
+test_base.py               198 INFO     接口响应头为====>{'Server': 'CloudWAF', 'Date': 'Sun, 29 Nov 2020 01:49:38 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '34', 'Connection': 'keep-alive', 'Set-Cookie': 'HWWAFSESID=849e573cfd24dba01d; path=/, HWWAFSESTIME=1606614578600; path=/', 'Pinpoint-MonitorG': 'itim-ms-hq-hot-wheels-sit', 'Pinpoint-ProjectID': '05e18e029d8010de2f0dc00b6f8c085c', 'Pinpoint-TxType': 'ALL_/**'}
+test_base.py               199 INFO     接口响应体为====>{"msg":"illegal token","code":401}
+test_base.py               157 ERROR    断言失败,实际值：401 不等于 预期值：0

@@ -94,6 +94,27 @@ class Case(db.Model):
     update_time = db.Column(db.DateTime, index=True, default=datetime.now, onupdate=datetime.now)
 
 
+
+class TestCase(db.Model):
+    __tablename__ = 'CaseData'
+    id = db.Column(db.Integer, primary_key=True)
+    caseId = db.Column(db.String(120),unique=True,nullable=False,comment='用例ID')
+    is_run= desc = db.Column(db.String(256), comment='是否运行 -1-运行，0-不运行')
+    descrption = db.Column(db.String(250),comment='用例标题，描述')
+    url = db.Column(db.String(250),nullable=False, comment='接口路径')
+    method = db.Column(db.String(250),nullable=False, comment='请求方法')
+    headers = db.Column(db.String(250),nullable=True,comment='请求headers')
+    cookies = db.Column(db.String(250),nullable=True,comment='cookies')
+    params = db.Column(db.String(250),nullable=True,comment='get请求参数')
+    body = db.Column(db.String(250),nullable=True,comment='请求参数')
+    file = db.Column(db.String(250),nullable=True,comment='文件')
+    verify = db.Column(db.String(250),nullable=True,comment='预期结果断言')
+    saves= db.Column(db.String(250),nullable=True,comment='变量提取')
+    db_type= db.Column(db.String(250),nullable=True,comment='数据库类型，mysql/redis')
+    db_name = db.Column(db.String(250),nullable=True,comment='数据库名')
+    setup_sql = db.Column(db.String(120),nullable=False,comment='前置执行sql')
+    teardown_sql = db.Column(db.String(120),nullable=False,comment='后置执行sql')
+
 # def __repr__(self):
 #     return '<User %r>' % self.username
 

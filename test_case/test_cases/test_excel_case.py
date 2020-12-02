@@ -24,7 +24,7 @@ class Test(unittest.TestCase):
     # 识别函数助手
     FUNC_EXPR = '__.*?\(.*?\)'
 
-    def save_data(self, source, key, jexpr):
+    def     save_data(self, source, key, jexpr):
         '''
         提取参数并保存至全局变量池
         :param source: 目标字符串
@@ -41,7 +41,7 @@ class Test(unittest.TestCase):
 
     def build_param(self, _string):
         '''
-        识别${key}并替换成全局变量池的value,处理__func()函数助手
+        识别${key}并替换成全局变量池的value,处 理__func()函数助手
         :param _string:
         :param str: 待替换的字符串
         :return:
